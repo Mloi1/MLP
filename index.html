@@ -11,46 +11,59 @@
 <body>
     <header>
         <ul>
-            <a href="index.html"><li class="menu">Nature</li></a>
-            <a href="pages/urban-landscapes.html" target="_blank"><li class="menu">Urban Lanscapes</li></a>
-            <a href=""><li class="menu">Contact</li></a>
+            <a href="index.html">
+                <li class="menu">Gallery</li>
+            </a>
+            <a href="pages/urban-landscapes.html" target="_blank">
+                <li class="menu">About</li>
+            </a>
+            <a href="">
+                <li class="menu">Contact</li>
+            </a>
         </ul>
         <button id="order">
             <a href="pages/form.html" title="Order Print" target="_blank">Buy Print</a>
         </button>
     </header>
-    <h1>Snapshots of Natural Landscapes</h1>
-    <h3>Choose an image.</h3>
+    <h1>Martina Loi Photography</h1>
+    <p id="description">Choose an image.</p>
     <ul id="imageGallery">
         <li>
-            <a href="images/nature/IMG_1601.jpeg" title="lighthouse">Lighthouse</a>
+            <a href="images/nature/IMG_1601.jpeg" title="lighthouse"><img src="images/thumbnails/IMG_1601.jpg" alt="Blurry Lighthouse"/></a>
         </li>
         <li>
-            <a href="images/nature/IMG_1718.jpeg" title="geyser">Geyser</a>
+            <a href="images/nature/IMG_1718.jpeg" title="geyser"><img src="images/thumbnails/IMG_1718.jpg" alt="Icelandic Geyser"/></a>
         </li>
         <li>
-            <a href="images/nature/IMG_2077.jpeg" title="ice">Ice</a>
+            <a href="images/nature/IMG_2077.jpeg" title="ice"><img src="images/thumbnails/IMG_2077.jpg" alt="Melting Ice"/></a>
         </li>
         <li>
-            <a href="images/nature/IMG_2087.jpeg" title="Jökulsarlon">Jökulsarlon</a>
+            <a href="images/nature/IMG_2087.jpeg" title="Jökulsarlon"><img src="images/thumbnails/IMG_2087.jpg" alt="Beach of Jökulsarlon" /></a>
         </li>
         <li>
-            <a href="images/nature/IMG_2471.jpeg" title="horse">Horse</a>
+            <a href="images/nature/IMG_2188.jpeg" title="glacier"><img src="images/thumbnails/IMG_2188.jpg" alt="Glacier of Jökulsarlon" /></a>
         </li>
         <li>
-            <a href="images/nature/IMG_2188.jpeg" title="glacier-lagoon">Glacier Lagoon</a>
+            <a href="images/nature/IMG_2245.jpeg" title="glacier-stroll"><img src="images/thumbnails/IMG_2245.jpg" alt="Glacier Stroll"/></a>
         </li>
         <li>
-            <a href="images/nature/IMG_2245.jpeg" title="glacier-stroll">Glacier Stroll</a>
+            <a href="images/nature/IMG_2345.jpeg" title="isolation"><img src="images/thumbnails/IMG_2345.jpg" alt="Peaceful Scenery" /></a>
         </li>
         <li>
-            <a href="images/nature/IMG_2345.jpeg" title="isolation">Isolation</a>
+            <a href="images/nature/IMG_2487.jpeg" onclick="showPic(this); return false" title="birds"><img src="images/thumbnails/IMG_2487.jpg" alt="Minimal Landscape"/></a>
         </li>
+        <li>
+            <a href="images/urban-landscape/12.jpeg" onclick="showPic(this); return false" title="musical-fountain"><img src="images/thumbnails/Fountain12.jpg" alt="Fountain Scenery" /></a>
+        </li>
+        <li>
+            <a href="images/urban-landscape/IMG_2539.jpeg" onclick="showPic(this); return false" title="st-paul-reflection"><img src="images/thumbnails/IMG_2539.jpg" alt="St Paul Cathedral" /></a>
+        </li>
+
     </ul>
     <img id="placeholder" src="images/icons8-home-decorations-80.png" alt="my image gallery" />
+    
+
 
 
     <script type="text/javascript" src="scripts/showPic.js"></script>
-</body>
-
-</html>
+</body></html>

@@ -6,7 +6,7 @@ body {
     margin: 1em 10%;
 }
 
-h1, h3 {
+h1, p {
     color: #333;
     background-color: transparent;
     display: flex;  
@@ -17,7 +17,7 @@ h1 {
    font-size: 50px;
 }
 
-h3 {
+p {
    font-size: 35px; 
 }
 
@@ -38,6 +38,7 @@ header {
 #imageGallery {
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     background-color: darkseagreen;
     border-radius: 10px;
@@ -58,14 +59,10 @@ li:hover {
     font-size: 25px;
 }
 
-img {
-    display: block;
-    margin: auto;
-}
-
 #placeholder {
-    height: 200px;
-    margin-top: 200px;
+    width: 60%;
+    margin: 100px auto;
+    display: block;
 }
 
 
