@@ -3,37 +3,51 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Image Gallery</title>
+    <title>Photography Gallery</title>
     <link rel="stylesheet" href="layout.css" media="screen" />
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
 </head>
 
 <body>
-    <div id="order">
-        <button>
+    <header>
+        <ul>
+            <a href="index.html"><li class="menu">Nature</li></a>
+            <a href="pages/urban-landscapes.html" target="_blank"><li class="menu">Urban Lanscapes</li></a>
+            <a href=""><li class="menu">Contact</li></a>
+        </ul>
+        <button id="order">
             <a href="pages/form.html" title="Order Print" target="_blank">Buy Print</a>
         </button>
-    </div>
-    <h1>Snapshots of Xi'an </h1>
-    <p id="description">Choose an image.</p>
-    <ul>
+    </header>
+    <h1>Snapshots of Natural Landscapes</h1>
+    <h3>Choose an image.</h3>
+    <ul id="imageGallery">
         <li>
-            <a href="xi'an/1.jpg" onclick="showPic(this); return false;" title="The Pagoda">Pagoda</a>
+            <a href="images/nature/IMG_1601.jpeg" title="lighthouse">Lighthouse</a>
         </li>
         <li>
-            <a href="xi'an/10.jpg" onclick="showPic(this); return false;" title="Terracotta Warriors">The Terracotta Warriors</a>
+            <a href="images/nature/IMG_1718.jpeg" title="geyser">Geyser</a>
         </li>
         <li>
-            <a href="xi'an/11.jpg" onclick="showPic(this); return false;" title="Night Scene">Xi'an by night</a>
+            <a href="images/nature/IMG_2077.jpeg" title="ice">Ice</a>
         </li>
         <li>
-            <a href="xi'an/12.jpg" onclick="showPic(this); return false;" title="Musical Fountain">Through haze and water</a>
+            <a href="images/nature/IMG_2087.jpeg" title="Jökulsarlon">Jökulsarlon</a>
         </li>
         <li>
-            <a href="xi'an/8.jpg" onclick="showPic(this); return false;" title="Steaming Soup">Steaming soup</a>
+            <a href="images/nature/IMG_2471.jpeg" title="horse">Horse</a>
+        </li>
+        <li>
+            <a href="images/nature/IMG_2188.jpeg" title="glacier-lagoon">Glacier Lagoon</a>
+        </li>
+        <li>
+            <a href="images/nature/IMG_2245.jpeg" title="glacier-stroll">Glacier Stroll</a>
+        </li>
+        <li>
+            <a href="images/nature/IMG_2345.jpeg" title="isolation">Isolation</a>
         </li>
     </ul>
-    <img id="placeholder" src="https://cdn1.iconfinder.com/data/icons/china-4/64/mask-china-opera-chinese-512.png" alt="my image gallery" />
+    <img id="placeholder" src="images/icons8-home-decorations-80.png" alt="my image gallery" />
 
 
     <script type="text/javascript" src="scripts/showPic.js"></script>
