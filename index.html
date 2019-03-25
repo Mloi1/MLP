@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="layout.css" media="screen" />
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+</head>
+
+<body>
+    <div id="order">
+        <button>
+            <a href="pages/form.html" title="Order Print" target="_blank">Buy Print</a>
+        </button>
+    </div>
+    <h1>Snapshots of Xi'an </h1>
+    <p id="description">Choose an image.</p>
+    <ul>
+        <li>
+            <a href="xi'an/1.jpg" onclick="showPic(this); return false;" title="The Pagoda">Pagoda</a>
+        </li>
+        <li>
+            <a href="xi'an/10.jpg" onclick="showPic(this); return false;" title="Terracotta Warriors">The Terracotta Warriors</a>
+        </li>
+        <li>
+            <a href="xi'an/11.jpg" onclick="showPic(this); return false;" title="Night Scene">Xi'an by night</a>
+        </li>
+        <li>
+            <a href="xi'an/12.jpg" onclick="showPic(this); return false;" title="Musical Fountain">Through haze and water</a>
+        </li>
+        <li>
+            <a href="xi'an/8.jpg" onclick="showPic(this); return false;" title="Steaming Soup">Steaming soup</a>
+        </li>
+    </ul>
+    <img id="placeholder" src="https://cdn1.iconfinder.com/data/icons/china-4/64/mask-china-opera-chinese-512.png" alt="my image gallery" />
+
+
+    <script type="text/javascript" src="scripts/showPic.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+/* Main Page */
+
+body {
+    font-family: 'Amatic SC', cursive;
+    color: #333;
+    margin: 1em 10%;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h1,
+p {
+    color: #333;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    font-size: 30px;
+}
+
+a {
+    font-family: 'Amatic SC', cursive;
+    color: black;
+    background-color: transparent;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+ul {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: darkseagreen;
+    border-radius: 10px;
+}
+
+li {
+    float: left;
+    padding: 1em;
+    list-style: none;
+}
+
+li:hover {
+    background-color: azure;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+/* Shopping Cart */
+
+#head-of-page {
+    display: flex;
+    justify-content: space-between;
+}
+
+h5 {
+    text-decoration: underline;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+}
+
+
+button {
+    color: white;
+    background-color: #f4bf42;
+    padding: 5px;
+    border-radius: 5px;
+    transition: 0.5s background-color ease-in-out, 0.5s color ease-in-out;
+    outline: none;
+    width: 100px;
+    margin: 15px;
+}
+
+button:hover {
+    color: blue;
+    background-color: azure;
+    transition: 0.2s background-color ease-in-out, 0.2s color ease-in-out;
+}
+
+button,
+input,
+select {
+    font-size: 16px;
+}
+
+#order {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cart {
+    background: linear-gradient(to bottom, #f44242 0%, #f47d41 75%, #f4ac41 100%);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 30px;
+}
+
+.item-row {
+    display: flex;
+    background: white;
+    width: 100%;
+    height: 30px;
+    padding: 30px;
+}
+
+span {
+    text-align: right;
+}
+
+span.item-type {
+    font-weight: bold;
+    color: red;
+    display: inline-block;
+    width: 100px;
+}
+
+span.quantity {
+    display: inline-block;
+    width: 30px;
+    color: black;
+}
+
+span.price {
+    display: inline-block;
+    width: 300px;
+    color: black;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Order form</title>
+    <link rel="stylesheet" href="../layout.css" media="screen" />
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+</head>
+
+<body>
+    <div id="head-of-page">
+        <h1>Order Form</h1>
+        <a href="../index.html">
+            <h5> Go Back </h5>
+        </a>
+    </div>
+    <form>
+        <select id="goodsSelector">
+            <option>Select an item</option>
+            <option value="pagoda">Pagoda</option>
+            <option value="terracotta">Terracotta Warriors</option>
+            <option value="nightScene">Night Scene</option>
+            <option value="musicalFountain">Musical Fountain</option>
+        </select>
+        <label for="goodsQuantity">Quantity: </label>
+        <input type="number" value="0" id="goodsQuantity" min="0" />
+        <div>
+            <button id="addToCart">Add to Cart</button>
+            <button id="undo">Undo</button>
+        </div>
+        <div class="cart">
+            No items purchased yet
+        </div>
+        <label for="name">Full Name</label>
+        <input type="text" id="name">
+        <label for="address-delivery">Address for Delivery</label>
+        <input type="address" id="address-delivery">
+
+
+        <button>Check out</button>
+    </form>
+    <script type="text/javascript" src="../scripts/formFunctions.js"></script>
+</body>
+
+</html>
