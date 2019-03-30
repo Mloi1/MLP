@@ -3,67 +3,91 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Photography Gallery</title>
-    <link rel="stylesheet" href="layout.css" media="screen" />
+    <title>MLP - Photography Gallery</title>
+    <link rel="stylesheet" href="style.css" media="screen" />
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <header>
+        <a href="index.html">
+            <h1 id="logo">Martina Loi Photography</h1>
+        </a>
         <ul>
             <a href="index.html">
                 <li class="menu">Gallery</li>
             </a>
-            <a href="pages/urban-landscapes.html" target="_blank">
-                <li class="menu">About</li>
+            <a href="pages/about.html" target="_blank">
+                <li class="menu">About &amp; Contact</li>
             </a>
-            <a href="">
-                <li class="menu">Contact</li>
+            <a id="social" href="https://www.instagram.com/martina__loi/?hl=en" target="_blank">
+                <li class="menu"><img src="images/icons8-instagram-26.png" alt="instagram"></li>
             </a>
         </ul>
+
         <button id="order">
-            <a href="pages/form.html" title="Order Print" target="_blank">Buy Print</a>
+            <a href="pages/form.html" title="Order Print" target="_blank">Shop Now</a>
         </button>
     </header>
-    <h1>Martina Loi Photography</h1>
-    <p id="description">Choose an image.</p>
-    <ul id="imageGallery">
-        <li>
-            <a href="images/nature/IMG_1601.jpeg" title="lighthouse"><img src="images/thumbnails/IMG_1601.jpg" alt="Blurry Lighthouse"/></a>
-        </li>
-        <li>
-            <a href="images/nature/IMG_1718.jpeg" title="geyser"><img src="images/thumbnails/IMG_1718.jpg" alt="Icelandic Geyser"/></a>
-        </li>
-        <li>
-            <a href="images/nature/IMG_2077.jpeg" title="ice"><img src="images/thumbnails/IMG_2077.jpg" alt="Melting Ice"/></a>
-        </li>
-        <li>
-            <a href="images/nature/IMG_2087.jpeg" title="Jökulsarlon"><img src="images/thumbnails/IMG_2087.jpg" alt="Beach of Jökulsarlon" /></a>
-        </li>
-        <li>
-            <a href="images/nature/IMG_2188.jpeg" title="glacier"><img src="images/thumbnails/IMG_2188.jpg" alt="Glacier of Jökulsarlon" /></a>
-        </li>
-        <li>
-            <a href="images/nature/IMG_2245.jpeg" title="glacier-stroll"><img src="images/thumbnails/IMG_2245.jpg" alt="Glacier Stroll"/></a>
-        </li>
-        <li>
-            <a href="images/nature/IMG_2345.jpeg" title="isolation"><img src="images/thumbnails/IMG_2345.jpg" alt="Peaceful Scenery" /></a>
-        </li>
-        <li>
-            <a href="images/nature/IMG_2487.jpeg" onclick="showPic(this); return false" title="birds"><img src="images/thumbnails/IMG_2487.jpg" alt="Minimal Landscape"/></a>
-        </li>
-        <li>
-            <a href="images/urban-landscape/12.jpeg" onclick="showPic(this); return false" title="musical-fountain"><img src="images/thumbnails/Fountain12.jpg" alt="Fountain Scenery" /></a>
-        </li>
-        <li>
-            <a href="images/urban-landscape/IMG_2539.jpeg" onclick="showPic(this); return false" title="st-paul-reflection"><img src="images/thumbnails/IMG_2539.jpg" alt="St Paul Cathedral" /></a>
-        </li>
+    <main>
 
-    </ul>
-    <img id="placeholder" src="images/icons8-home-decorations-80.png" alt="my image gallery" />
-    
+        <p id="intro">Buy prints of my travels around the world. Click an image from the gallery to see a preview, or click on Shop Now to order your print.</p>
 
+        <div id="slider">
+            <div class="MS-content" id="imageGallery">
+                <div class="item">
+                    <a href="images/nature/IMG_1601.jpeg" title="lighthouse - Size(cm) 50x70 unframed printed on 60lb. Polar Matte"><img src="images/thumbnails/lighthouse.jpg" alt="Blurry Lighthouse" /></a>
+                </div>
+                <div class="item">
+                    <a href="images/nature/IMG_1718.jpeg" title="geyser"><img src="images/thumbnails/IMG_1718.jpg" alt="Icelandic Geyser" /></a>
+                </div>
+                <div class="item">
+                    <a href="images/nature/IMG_2077.jpeg" title="ice"><img src="images/thumbnails/IMG_2077.jpg" alt="Melting Ice" /></a>
+                </div>
+                <div class="item">
+                    <a href="images/nature/IMG_2087.jpeg" title="jökulsarlon"><img src="images/thumbnails/IMG_2087.jpg" alt="Beach of Jökulsarlon" /></a>
+                </div>
+                <div class="item">
+                    <a href="images/nature/IMG_2188.jpeg" title="glacier"><img src="images/thumbnails/IMG_2188.jpg" alt="Glacier" /></a>
+                </div>
+                <div class="item">
+                    <a href="images/nature/IMG_2245.jpeg" title="stroll"><img src="images/thumbnails/IMG_2245.jpg" alt="Stroll" /></a>
+                </div>
+                <div class="item">
+                    <a href="images/nature/IMG_2345.jpeg" title="peace"><img src="images/thumbnails/IMG_2345.jpg" alt="Peaceful Scenery" /></a>
+                </div>
+                <div class="item">
+                    <a href="images/nature/IMG_2487.jpeg" title="birds"><img src="images/thumbnails/IMG_2487.jpg" alt="Minimal Landscape" /></a>
+                </div>
+                <div class="item">
+                    <a href="images/urban-landscape/12.jpeg" title="musical-fountain"><img src="images/thumbnails/Fountain12.jpg" alt="Fountain Scenery" /></a>
+                </div>
+                <div class="item">
+                    <a href="images/urban-landscape/IMG_2539.jpeg" title="st-paul-reflection"><img src="images/thumbnails/IMG_2539.jpg" alt="St Paul Cathedral" /></a>
+                </div>
 
+            </div>
+            <div class="MS-controls">
+                <button class="MS-left"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+                <button class="MS-right"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+            </div>
+        </div>
 
+        <img id="placeholder" src="images/icons8-home-decorations-80.png" alt="my image gallery" />
+        <p id="description">Choose an image.</p>
+    </main>
+    <!--Jquery and JS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="scripts/Multislider-master/js/multislider.min.js"></script>
+    <script>
+        $('#slider').multislider({
+            duration: 1000,
+            interval: 3000,
+        });
+
+    </script>
     <script type="text/javascript" src="scripts/showPic.js"></script>
-</body></html>
+</body>
+
+</html>

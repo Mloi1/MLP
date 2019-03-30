@@ -1,33 +1,41 @@
 const roundNumber = number => Math.round(number * 100) / 100
 
 document.addEventListener("DOMContentLoaded", () => {
-    //form and values
-    //getting the DOM elements we are going to work with
-    const goodsQuantity = document.getElementById("goodsQuantity")
-    const goodsSelector = document.getElementById("goodsSelector")
+    //getting form and values
+    const picsQuantity = document.getElementById("picsQuantity")
+    const picsSelector = document.getElementById("picsSelector")
     const addToCart = document.getElementById("addToCart")
     const cart = document.getElementsByClassName("cart")[0]
     const basket = {}
     const items = {
-        pagoda: {
-            price: 9.99,
-            img: "https://cdn1.iconfinder.com/data/icons/china-4/64/mask-china-opera-chinese-512.png"
-        },
-        terracotta: {
+        lighthouse: {
             price: 19.99,
-            img: "https://cdn1.iconfinder.com/data/icons/china-4/64/mask-china-opera-chinese-512.png"
+        },
+        geyser: {
+            price: 19.99,
+        },
+        ice: {
+            price: 15.99,
 
         },
-        nightScene: {
-            price: 15.99,
-            img: "https://cdn1.iconfinder.com/data/icons/china-4/64/mask-china-opera-chinese-512.png"
-
+        jökulsarlon: {
+            price: 20.99,
+        },
+        glacier: {
+            price: 20.99,
+        },
+        stroll: {
+            price: 20.99,
+        },
+        peace: {
+            price: 19.99,
+        },
+        birds: {
+            price: 19.99,
         },
         musicalFountain: {
             price: 20.99,
-            img: "https://cdn1.iconfinder.com/data/icons/china-4/64/mask-china-opera-chinese-512.png"
-
-        },
+        }
     }
 
     const populateCart = basket => {
@@ -42,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
             total += subTotal
             const newDiv = document.createElement("div")
             newDiv.classList.add("item-row")
-            newDiv.innerHTML = `<img src=${imgSrc} width="20px"> <span class="item-type">${itemType}: </span><span class="quantity">${quantity}</span><span class="price"> unit price: £${unitPrice}</span><span class="price"> total price: ${roundNumber(subTotal)}</span>`
+            newDiv.innerHTML = `<span class="item-type">${itemType}: </span><span class="quantity">${quantity}</span><span class="price"> unit price: £${unitPrice}</span><span class="price"> total price: ${roundNumber(subTotal)}</span>`
             cart.appendChild(newDiv)
         })
         const newTotal = document.createElement("div");
@@ -52,15 +60,15 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     const goodSelectorsHandler = event => {
         const currentQuantity = basket[event.target.value]
-        goodsQuantity.value = currentQuantity || 0
+        picsQuantity.value = currentQuantity || 0
     }
     const addToCartHandler = event => {
         event.preventDefault()
-        basket[goodsSelector.value] = goodsQuantity.value
+        basket[picsSelector.value] = picsQuantity.value
         populateCart(basket)
     }
     // goodsQuantity.addEventListener("blur", goodSelectorsHandler)
-    goodsSelector.addEventListener("input", goodSelectorsHandler)
+    picsSelector.addEventListener("input", goodSelectorsHandler)
     addToCart.addEventListener("click", addToCartHandler)
 })
 
