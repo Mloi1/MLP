@@ -56,8 +56,17 @@ li {
     font-size: 25px;
 }
 
+.highlight {
+    background-color: #f4bf42;
+    border-radius: 5px;
+}
+
+#intro {
+    margin: 20px auto; 
+}
+
 #placeholder {
-    width: 70%;
+    height: 700px;
     margin: 30px auto;
     display: block;
 }
@@ -110,6 +119,37 @@ li {
     padding: 20px;
     margin: 0;
 }
+
+
+/* === Placeholder animation ===*/
+
+/*figure {
+    margin: 100px 0 0 0;
+    background-color: rgba(0,0,0,.5);
+    border: 1px solid #fff;
+    display: inline-block;
+    position: relative;
+}
+
+figure #book {
+    height: 400px;
+    background: url(images/animation-sprite.png) no-repeat 0 0;
+    background-size: 3000px 100%;
+    width: 800px;
+    position: absolute;
+    bottom: 100px;
+    left: 300px;
+    animation: placeholder_anim 1.9s steps(5) infinite;
+    
+}
+
+@keyframes placeholder_anim {
+    
+    0% { background-position: 0px 0px;}
+    100% { background-position: -3000px 0px;}
+    
+
+}*/
 
 
 /* === Shop Now Page === */
@@ -216,7 +256,11 @@ span.price {
 }
 
 #welcome {
-    margin-bottom: 150px;
+    margin: 80px 35%; 
+}
+
+#portrait {
+    height: 300px;
 }
 
 
