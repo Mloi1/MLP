@@ -279,7 +279,7 @@ span.price {
 
 /* === MediaQuery === */
 
-@media (max-width 1278px) {
+@media (max-width 1277px) {
      
     p {
         font-size: 30px;
