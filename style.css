@@ -281,7 +281,7 @@ span.price {
 
 @media (max-width 1277px) {
      
-    p {
+    #intro s{
         font-size: 30px;
-    }
+    
 }
