@@ -70,7 +70,7 @@ li {
 #placeholder {
     height: 700px;
     margin: 30px auto;
-    display: block;
+    display: block; 
 }
 
 
@@ -191,7 +191,6 @@ span {
 span.item-type {
     font-weight: bold;
     color: red;
-    width: 100px;
 }
 
 span.quantity {

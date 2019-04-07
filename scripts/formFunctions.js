@@ -8,33 +8,54 @@ document.addEventListener("DOMContentLoaded", () => {
     const cart = document.getElementsByClassName("cart")[0]
     const basket = {}
     const items = {
-        lighthouse: {
+        bosa: {
             price: 19.99,
+            size: "50x70",
         },
         geyser: {
             price: 19.99,
-        },
-        ice: {
-            price: 15.99,
-
-        },
-        jökulsarlon: {
-            price: 20.99,
+            size: "50x70",
         },
         glacier: {
-            price: 20.99,
+            price: 15.99,
+            size: "50x85",
+
         },
-        stroll: {
+        porto: {
             price: 20.99,
+            size: "50x120",
         },
-        peace: {
+        redSquirrel: {
+            price: 20.99,
+            size: "70x50",
+        },
+        rainyLondon: {
+            price: 20.99,
+            size: "50x65",
+        },
+        murales: {
             price: 19.99,
+            size: "50x70",
         },
-        birds: {
+        tightropeWalkers: {
             price: 19.99,
+            size: "50x67",
         },
-        musicalFountain: {
+        iceland: {
             price: 20.99,
+            size: "50x65",
+        },
+        stPaul: {
+            price: 20.99,
+            size: "50x70",
+        },
+        towerBridge: {
+            price: 20.99,
+            size: "50x65",
+        },
+        peaceAndQuiet: {
+            price: 20.99,
+            size: "50x65",
         }
     }
 
@@ -72,7 +93,4 @@ document.addEventListener("DOMContentLoaded", () => {
     addToCart.addEventListener("click", addToCartHandler)
 })
 
-
-/*function send(button.onclick) {
-       alert("Thank you! Your order has been received!")
-   } */
+s
