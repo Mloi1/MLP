@@ -63,6 +63,8 @@ li {
 
 #intro {
     margin: 20px auto; 
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
 }
 
 #placeholder {
@@ -81,16 +83,14 @@ li {
 
 .MS-content {
     padding: 0;
-    justify-content: space-between;
-    background-color: darkseagreen;
+    background-color: #f4bf42;
     border-radius: 10px;
     white-space: nowrap;
     overflow: hidden;
-    margin: 0 5%;
+    margin: 0 8%;
 }
 
 .item {
-    width: 20%;
     display: inline-block;
     position: relative;
     vertical-align: top;
@@ -107,49 +107,18 @@ li {
 }
 
 .MS-controls .MS-left {
-    left: 10px;
+    left: 100px;
 }
 
 .MS-controls .MS-right {
-    right: 10px;
+    right: 100px;
 }
 
 .item img {
-    height: 130px;
-    padding: 20px;
+    height: 120px;
+    padding: 15px;
     margin: 0;
 }
-
-
-/* === Placeholder animation ===*/
-
-/*figure {
-    margin: 100px 0 0 0;
-    background-color: rgba(0,0,0,.5);
-    border: 1px solid #fff;
-    display: inline-block;
-    position: relative;
-}
-
-figure #book {
-    height: 400px;
-    background: url(images/animation-sprite.png) no-repeat 0 0;
-    background-size: 3000px 100%;
-    width: 800px;
-    position: absolute;
-    bottom: 100px;
-    left: 300px;
-    animation: placeholder_anim 1.9s steps(5) infinite;
-    
-}
-
-@keyframes placeholder_anim {
-    
-    0% { background-position: 0px 0px;}
-    100% { background-position: -3000px 0px;}
-    
-
-}*/
 
 
 /* === Shop Now Page === */
@@ -298,7 +267,6 @@ span.price {
 
 @media (max-width 1277px) {
      
-    #intro s{
-        font-size: 30px;
+
     
 }
