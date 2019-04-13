@@ -8,7 +8,6 @@ body {
 
 #logo {
     border-bottom: 2px solid;
-    margin-left: 15px;
 }
 
 h1,
@@ -79,6 +78,7 @@ li {
 
 #slider {
     position: relative;
+
 }
 
 .MS-content {
@@ -116,12 +116,24 @@ li {
 
 .item img {
     height: 120px;
-    padding: 15px;
+    padding: 5px;
     margin: 0;
+    display: block;
+    background-color: white;
+    border: 5px solid #FFD7C6;
 }
 
 .mobile {
     visibility: hidden;
+    display: flex;
+    flex: wrap;
+    position: absolute;
+    top: 400px;
+    width: 100%;
+}
+
+.mob {
+    display: inline-block;
 }
 
 
@@ -130,6 +142,7 @@ li {
 label {
     font-size: 30px;
     font-weight: bold;
+    line-height: 50px;
 }
 
 h2 {
@@ -147,18 +160,33 @@ form {
     width: 900px;
     position: relative;
     margin: auto;
+    border: solid 1px;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 5px 10px 8px #888888;
 }
 
+.cart-handler {
+    border-radius: 5px;
+    margin: 5px 5px auto auto;
+    font-family: 'Amatic SC', cursive;
+    font-size: 20px;
+    border: 1px solid black;
+    box-shadow: 3px 3px 3px #888888;
+    cursor: pointer;
+}
 
 #order {
     color: white;
     background-color: #f4bf42;
     padding: 5px;
     border-radius: 5px;
-    transition: 0.5s background-color ease-in-out, 0.5s color ease-in-out;
-    outline: none;
+    /*transition: 0.5s background-color ease-in-out, 0.5s color ease-in-out;
+    outline: none;*/
     width: 100px;
     margin: 15px;
+    cursor: pointer;
 }
 
 .menu:hover {
@@ -183,8 +211,7 @@ select {
 
 .item-row {
     display: flex;
-    width: 700px;
-    height: 30px;
+    flex-wrap: wrap;
     padding: 30px;
 }
 
@@ -226,6 +253,7 @@ span.price {
 
 #about {
     text-align: center;
+    margin: 0 30px;
 }
 
 #welcome {
@@ -245,15 +273,12 @@ span.price {
 }
 
 .sprite {
-    height: 500px;
+    height: 100vmin;
     display: block;
-    background: url(images/charlie_brown.png) no-repeat 0 0;
-    background-size: 6500px 100%;
-    width: 500px;
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    margin-left: -250px;
+    background: url(images/charlie_brown.png);
+    background-size: 1300vmin 100%;
+    width: 100vmin;
+    margin: 0 auto;
     animation: good-grief 3s steps(13) infinite;
 }
 
@@ -263,14 +288,15 @@ span.price {
     }
 
     100% {
-        background-position: -6500px 0px;
+        background-position: -1300vmin 0px;
     }
 }
 
 
 /* === MediaQuery === */
 
-@media only screen and (max-width: 1277px) {
+
+@media (max-width: 1224px) {
 
     header {
         height: auto;
@@ -310,7 +336,7 @@ span.price {
     }
 }
 
-@media only screen and (max-width: 720px) {
+@media (max-width: 768px) {
 
     a,
     label,
@@ -325,6 +351,10 @@ span.price {
         width: 100%;
         text-align: center;
     }
+    
+    .menu {
+        font-size: 20px;
+    }
 
     h1,
     p,
@@ -334,13 +364,8 @@ span.price {
 
     }
 
-    /*p {
-        font-size: 25px;
-        margin: 0 10px;
-    }*/
-
     figcaption {
-        font-size: 100px;
+        font-size: 28px;
         margin: 0 10px;
     }
 
@@ -357,17 +382,15 @@ span.price {
         font-size: 45px;
     }
 
+
     .no-mobile {
         visibility: hidden;
     }
 
+
     .mobile {
         visibility: visible;
-        display: flex;
         flex-direction: column;
-        position: absolute;
-        top: 400px;
-        width: 100%;
     }
 
     .flex-item {
@@ -377,5 +400,23 @@ span.price {
     .mob {
         width: 100%;
         margin: auto;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .sprite {
+        width: 50vmin;
+        height: 50vmin;
+        background-size: 650vmin 100%;
+    }
+
+    @keyframes good-grief {
+        0% {
+            background-position: 0px 0px;
+        }
+
+        100% {
+            background-position: -650vmin 0px;
+        }
     }
 }

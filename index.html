@@ -3,7 +3,9 @@
 
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MLP - Photography Gallery</title>
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="style.css" media="screen" />
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -11,27 +13,28 @@
 </head>
 
 <body>
-    <header>
+    <header role="banner">
         <a href="index.html">
             <h1 id="logo">Martina Loi Photography</h1>
         </a>
-        <ul>
-            <a href="index.html">
-                <li class="menu highlight">Gallery</li>
-            </a>
-            <a href="pages/about.html" target="_blank">
-                <li class="menu">About &amp; Contact</li>
-            </a>
-            <a id="social" href="https://www.instagram.com/martina__loi/?hl=en" target="_blank">
-                <li class="menu"><img src="images/icons8-instagram-26.png" alt="instagram icon"></li>
-            </a>
-        </ul>
-
+        <nav role="navigation">
+            <ul>
+                <a href="index.html">
+                    <li class="menu highlight">Gallery</li>
+                </a>
+                <a href="pages/about.html" target="_blank">
+                    <li class="menu">About &amp; Contact</li>
+                </a>
+                <a id="social" href="https://www.instagram.com/martina__loi/?hl=en" target="_blank">
+                    <li class="menu"><img src="images/icons8-instagram-26.png" alt="instagram icon"></li>
+                </a>
+            </ul>
+        </nav>
         <button id="order">
             <a href="pages/form.html" title="Order Print" target="_blank">Shop</a>
         </button>
     </header>
-    <main>
+    <main role="main">
 
         <p class="no-mobile" id="intro">Click an image from the gallery to see a preview, or go to Shop to order your print.</p>
 
@@ -143,7 +146,7 @@
     <!--Jquery and JS-->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="scripts/Multislider-master/js/multislider.min.js"></script>
+    <script src="scripts/Multislider-master/js/multislider.min.js"></script>-->
     <script>
         $('#slider').multislider({
             duration: 1000,
