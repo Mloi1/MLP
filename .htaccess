@@ -1,1 +1,2 @@
-Redirect /checkout /pages/404.html
+Redirect /checkout 
+/pages/404.html
