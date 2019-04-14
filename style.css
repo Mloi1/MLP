@@ -350,15 +350,6 @@ span.price {
         text-align: center;
     }
     
-    #form-page {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    #form-nav {
-        margin: 0 auto;
-    }
-    
     #logo,
     h2 {
         font-weight: normal;
@@ -443,5 +434,17 @@ span.price {
         100% {
             background-position: -650vmin 0px;
         }
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    
+    #form-page {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #form-nav {
+        margin: 0 auto;
     }
 }
