@@ -137,15 +137,14 @@ li {
 }
 
 
-/* === Shop Now Page === */
+/* === Shop Page === */
 
 label {
     font-size: 30px;
     font-weight: bold;
     line-height: 50px;
 }
-
-h2 {
+p {
     font-size: 40px;
     background-color: darkseagreen;
     border-radius: 5px;
@@ -178,7 +177,6 @@ form {
 }
 
 #order {
-    /*color: white;*/
     background-color: #f4bf42;
     padding: 5px;
     border-radius: 5px;
@@ -340,7 +338,9 @@ span.price {
     label,
     span.item-type,
     span.size,
-    #checkout {
+    #checkout,
+    #logo,
+    h2 {
         font-weight: normal;
     }
 
@@ -349,16 +349,11 @@ span.price {
         width: 100%;
         text-align: center;
     }
-    
-    #logo,
-    h2 {
-        font-weight: normal;
-    }
 
     .menu {
         font-size: 20px;
     }
-    
+
 
     h1,
     p,
@@ -372,7 +367,7 @@ span.price {
         font-size: 28px;
         margin: 0 10px;
     }
-    
+
     #portrait {
         display: block;
         margin: 0 auto;
@@ -401,6 +396,7 @@ span.price {
     .mobile {
         visibility: visible;
         flex-direction: column;
+        top: 300px;
     }
 
     .flex-item {
@@ -415,7 +411,7 @@ span.price {
 
 @media only screen and (min-width: 768px) {
 
-    
+
     #order {
         margin-left: 250px;
     }
@@ -437,14 +433,74 @@ span.price {
     }
 }
 
-@media only screen and (max-width: 640px) {
-    
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+
     #form-page {
         display: flex;
         flex-direction: column;
     }
-    
+
     #form-nav {
         margin: 0 auto;
+    }
+
+    #form-ul {
+        padding-left: 0;
+    }
+
+    p {
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+
+    #logo {
+        font-size: 30px;
+    }
+
+    .menu,
+    .shop {
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    #order {
+        margin: 0 15px;
+    }
+
+    .social {
+        height: 15px;
+    }
+
+    .mobile {
+        top: 200px;
+    }
+
+    #form-page {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #form-nav {
+        margin: 0 auto;
+    }
+
+    #form-ul {
+        padding-left: 0;
+    }
+
+    #welcome {
+        margin: 5%;
+        font-size: 30px;
+    }
+
+    p {
+        margin: 0 3%;
+        font-size: 25px;
+    }
+
+    #portrait {
+        height: 200px;
     }
 }
